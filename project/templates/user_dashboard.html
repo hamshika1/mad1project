@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>User Dashboard</title></head>
+<body>
+<h2>User Dashboard</h2>
+<ul>
+    {% for lot in lots %}
+    <li>{{ lot.name }} - ₹{{ lot.price_per_hour }}/hr</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
